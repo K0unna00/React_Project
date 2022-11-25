@@ -1,10 +1,6 @@
 import './Hero.scss'
 import HeroTitle from './HeroTitle.png'
 import HeroImage from './HeroImage.png'
-import FacebookLogo from '../../../../assets/images/FacebookLogo.png'
-import InstagramLogo from '../../../../assets/images/InstagramLogo.png'
-import TwitterLogo from '../../../../assets/images/TwitterLogo.png'
-import SkypeLogo from '../../../../assets/images/SkypeLogo.png'
 
 
 export const Hero = () =>{
@@ -27,10 +23,10 @@ export const Hero = () =>{
                 </div>
             </div>
             <ul className="media">
-                <li className="active"><img src={FacebookLogo} alt="" /></li>
-                <li><img src={InstagramLogo} alt="" /></li>
-                <li><img src={TwitterLogo} alt="" /></li>
-                <li><img src={SkypeLogo} alt="" /></li>
+                <li className="active"><i className="fa-brands fa-facebook-f"></i></li>
+                <li><i className="fa-brands fa-facebook-f"></i></li>
+                <li><i className="fa-brands fa-facebook-f"></i></li>
+                <li><i className="fa-brands fa-facebook-f"></i></li>
             </ul>
         </section>
     )
