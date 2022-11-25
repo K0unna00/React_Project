@@ -23,10 +23,10 @@ export const Hero = () =>{
                 </div>
             </div>
             <ul className="media">
-                <li className="active"><i className="fa-brands fa-facebook-f"></i></li>
                 <li><i className="fa-brands fa-facebook-f"></i></li>
-                <li><i className="fa-brands fa-facebook-f"></i></li>
-                <li><i className="fa-brands fa-facebook-f"></i></li>
+                <li><i className="fa-brands fa-instagram"></i></li>
+                <li><i className="fa-brands fa-twitter"></i></li>
+                <li><i className="fa-brands fa-skype"></i></li>
             </ul>
         </section>
     )
