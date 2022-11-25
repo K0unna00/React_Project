@@ -1,0 +1,19 @@
+{
+  "name": "group4_project_rep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/K0unna00/Group4_Project_Rep.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/K0unna00/Group4_Project_Rep/issues"
+  },
+  "homepage": "https://github.com/K0unna00/Group4_Project_Rep#readme"
+}
