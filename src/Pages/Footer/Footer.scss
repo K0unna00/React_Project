@@ -45,6 +45,7 @@ footer .footer li .content .input input {
     background-color: transparent;
     padding-left: 18px;
     font-size: 16px;
+    color:white;
 }
 
 footer .footer li .content .input .button {
@@ -87,4 +88,12 @@ footer .footer .media li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .left{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .right{
+        font-size: 34px;
+    }
 }

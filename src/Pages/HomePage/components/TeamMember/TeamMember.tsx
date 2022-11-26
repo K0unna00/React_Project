@@ -13,13 +13,13 @@ export const TeamMember=()=>{
                     Team Member
                 </div>
                 <div className="title">
-                    <img src="./img/TeamMemberTitle.png" alt="" />
+                    We Have <br /> <span>Some Awesome</span> People
                 </div>
                 <div className="members">
                     <MemberCard image={mate1} name="Vladimir Putin" position="UI/UX Designer"/>
-                    <MemberCard image={mate2} name="DaVqin Abdulla" position="UI/UX Designer"/>
+                    <MemberCard image={mate2} name="ProstaKisi" position="UI/UX Designer"/>
                     <MemberCard image={mate3} name="Anton Efremenkov" position="UI/UX Designer"/>
-                    <MemberCard image={mate4} name="Kisi" position="AliBasKomandan"/>
+                    <MemberCard image={mate4} name="Kisi DaVqin Abdulla" position="AliBasKomandan"/>
                 </div>
             </div>
         </section>
