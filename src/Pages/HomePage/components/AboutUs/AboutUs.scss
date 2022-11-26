@@ -1,0 +1,92 @@
+@import '../../../../variables';
+
+
+.container{
+  
+      .about-us-text {
+        font-size: 16px;
+        color: $second-font-color;
+        font-weight: 400;
+        font-family: $main-font;
+        margin-top: 120px;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      .up {
+        display: flex;
+        max-height: 435px;
+        margin-bottom: 60px;
+
+        .image {
+          display: flex;
+          max-width: 684px;
+          img {
+            height: 352px;
+            width: 100%;
+            align-self: center;
+          }
+        }
+
+        .text {
+          max-width: 570px;
+          height: 386px;
+          h1{
+              font-size: 39px;
+              font-family: $main-font;
+              font-weight: 600;
+              color: $font-color;
+              margin-bottom: 18px;
+              span{
+                  color: $accent-color;
+              }
+          }
+          p{
+            font-family: Work Sans;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-bottom: 25px;
+          }
+
+          button{
+            background-color: $accent-color;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+            border: 0;
+            color: white;
+            font-weight: 500;
+            font-size: 20px;
+            border-radius: 5px;
+            width: 150px;
+            height: 50px;
+            transition: 0.4s;
+
+            &:hover {
+                box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+            }
+          }
+        }
+      }
+
+      .under{
+        display: flex;
+        justify-content: space-between;
+        .items{
+          text-align: center;
+          padding: 25px;
+          width: 270px;
+          height: 200px;
+          
+          /* White */
+          background: #FFFFFF;
+          /* Effect-1 */
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+          transition: 0.5s;
+          &:hover{
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+          }
+        }
+      }
+}
