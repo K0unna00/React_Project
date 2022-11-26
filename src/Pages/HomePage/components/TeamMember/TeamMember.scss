@@ -13,6 +13,12 @@
 
         .title {
             margin-top: 25px;
+            font-weight: 600;
+            font-size: 39.06px;
+            line-height: 123.6%;
+            span{
+                color: $accent-color;
+            }
         }
 
         .members {
