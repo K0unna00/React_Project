@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Home } from './Pages/HomePage/Home';
 import { Footer } from './Pages/Footer/Footer';
 import './App.css';
+import { Header } from './Pages/Header/Header';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         <link rel="preconnect" href="https://fonts.gstatic.com"  />
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
       </head>
+      <header>
+        <Header/>
+      </header>
       <main>
         <Routes>
             <Route path='/' element={<Home/>} />

@@ -3,6 +3,7 @@
 .hero {
     position: relative;
     background-color: $main-background;
+    z-index: -1;
 
     .container {
         display: flex;

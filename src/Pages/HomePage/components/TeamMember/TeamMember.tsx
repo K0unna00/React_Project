@@ -17,9 +17,9 @@ export const TeamMember=()=>{
                 </div>
                 <div className="members">
                     <MemberCard image={mate1} name="Vladimir Putin" position="UI/UX Designer"/>
-                    <MemberCard image={mate2} name="DaVqin Abdulla" position="UI/UX Designer"/>
+                    <MemberCard image={mate2} name="Kiwi" position="UI/UX Designer"/>
                     <MemberCard image={mate3} name="Anton Efremenkov" position="UI/UX Designer"/>
-                    <MemberCard image={mate4} name="Kisi" position="AliBasKomandan"/>
+                    <MemberCard image={mate4} name="Dashgin" position="AliBasKomandan"/>
                 </div>
             </div>
         </section>
