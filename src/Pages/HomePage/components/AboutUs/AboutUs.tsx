@@ -12,7 +12,7 @@ export const AboutUs = () => {
       <p className="about-us-text"> About Us</p>
         <div className="up">
           <div className="image">
-            <img src={imgAboutUs} alt="" />
+            <img src={ imgAboutUs } alt="" />
           </div>
           <div className="text">
             <h1>
