@@ -1,6 +1,7 @@
 import './Header.scss';
 import Logo from './Digiency.svg';
 import Dark from './Dark.svg';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
     return(
@@ -10,11 +11,15 @@ export const Header = () => {
                     <img src = {Logo} alt="" />
                 </div>
                 <div className="navbar">
-                    <a href="">Home</a>
+                    <Link to="/">
+                        <a href="">Home</a>
+                    </Link>
                     <a href="">About Us</a>
                     <a href="">Our Work</a>
                     <a href="">Clients</a>
-                    <a href="">Our Blog</a>
+                    <Link to="/our-blog">
+                        <a href="">Our Blog</a>
+                    </Link>
                     <a href="">Profile</a>
                 </div>
                 <div className="dark-mode">
