@@ -15,7 +15,7 @@
 
       .up {
         display: flex;
-        max-height: 435px;
+        //max-height: 435px;
         margin-bottom: 60px;
 
         .image {
@@ -89,4 +89,13 @@
           }
         }
       }
+}
+
+
+@media only screen and (max-width: 375px) {
+  .container{
+    width: 323px;
+    display: flex;
+    flex-direction: column;
+  }
 }
