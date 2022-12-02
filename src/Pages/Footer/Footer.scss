@@ -97,3 +97,20 @@ footer .footer .media li {
         font-size: 34px;
     }
 }
+@media only screen and (max-width: 376px) {
+    footer{
+        .container{
+            .footer{
+                display: block;
+                text-align: start;
+                li{
+                    margin-top: 50px;
+                    .text{
+                        width: 333px;
+                    }
+                }
+                
+            }
+        }
+    }
+}

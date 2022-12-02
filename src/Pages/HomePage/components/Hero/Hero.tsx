@@ -1,5 +1,4 @@
 import './Hero.scss'
-import HeroTitle from './HeroTitle.png'
 import HeroImage from './HeroImage.png'
 
 
@@ -9,7 +8,7 @@ export const Hero = () =>{
             <div className="container">
                 <div className="left">
                     <div className="title">
-                        <img src={HeroTitle} alt="" />
+                        We Are The Best <span>Digital Agency</span> for business
                     </div>
                     <div className="text">
                         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
