@@ -14,7 +14,7 @@ export const Footer = () => {
                         </div>
                         <div className="content">
                             <div className="text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet libero dis eget maecenas bibendum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis, cursus egestas etiam posuere vitae cursus consectetur eu. Cursus vitae porttitor libero est posuere.
                             </div>
                             <ul className="media">
                                 <li><i className="fa-brands fa-facebook"></i></li>
