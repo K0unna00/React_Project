@@ -16,10 +16,7 @@ export const AboutUs = () => {
           </div>
           <div className="text">
             <h1>
-              We Are{" "}
-              <span>
-                {" "}
-                Making <br /> Ideas Better{" "}
+              We Are<span> Making <br />Ideas Better
               </span>
               For Everyone
             </h1>

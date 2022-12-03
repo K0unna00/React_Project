@@ -9,15 +9,12 @@
         display: flex;
         justify-content: space-between;
         padding: 37px 0;
-
         .logo{
             cursor: pointer;
         }
-
         .navbar{
             display: flex;
             gap: 38px;
-
             a{
                 font-weight: 500;
                 color: $font-color;
@@ -32,8 +29,36 @@
             }
         }
 
-        .dark-mode{
+        .dark-mode-btn{
+            margin-top: -10px;
+            cursor: pointer;
+        }
+        .menu-btn{
+            display: none;
             cursor: pointer;
         }
     }
+}
+
+@media only screen and (max-width: 376px) {
+    .header{
+        .container{
+            max-width:323px;
+            display: flex;
+            .logo{
+                width: 102px;
+            }
+            .navbar{
+                display: none;
+            }
+            .menu-btn{
+                width: 18px;
+                display: block;
+            }
+            .dark-mode-btn{
+                width: 24px;
+            }
+        }   
+    }
+     
 }
