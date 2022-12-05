@@ -4,6 +4,10 @@ import phone from "./phone-call.svg";
 import location from "./map-pin.svg";
 import msgPic from "./message-pic.svg";
 import "./ContactUs.scss";
+import frame1 from "./Frames/Frame 1.svg";
+import frame2 from "./Frames/Frame 2.svg";
+import frame3 from "./Frames/Frame 3.svg";
+import frame4 from "./Frames/Frame 4.svg";
 
 export const ContactUs = () => {
     let descriptionText = `158 ralegih sit, houston, yk 5896,uk`;
@@ -42,7 +46,17 @@ export const ContactUs = () => {
                                 </div>
                             </div>
                         </form>
+                        <button type="submit">Send Message</button>
                     </div>
+                </div>
+                <div className="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d67084.07687790766!2d-122.35640598036014!3d37.55272270390706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f9e60efa95545%3A0xfd8efcf42dcc1ba7!2sSan%20Mateo%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1670159468084!5m2!1sen!2s" width="600" height="450" loading="lazy" title="maps"></iframe>
+                </div>
+                <div className="frames">
+                    <img src={frame1} alt="frame1" />
+                    <img src={frame2} alt="frame2" />
+                    <img src={frame3} alt="frame3" />
+                    <img src={frame4} alt="frame4" />
                 </div>
             </div>
         </section>
