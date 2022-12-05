@@ -1,0 +1,64 @@
+@import '../../../../variables';
+
+section.first-blog{
+    margin-top: 120px;
+
+    .blog-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 780px;
+    }
+    
+    .blog-data{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding-left: 18px;
+         div{
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            font-family: $main-font;
+            font-weight: 500;
+            font-size: 20px;
+            color: $second-font-color;
+         }
+    }
+
+    .text{
+        font-family: $main-font;
+        h1{
+            font-size: 31px;
+            font-weight: 600;
+            color: $font-color;
+        }
+        p{
+            margin-top: 18px;
+            font-size: 16px;
+            font-weight: 400;
+            color: $second-font-color;
+            line-height: 24px
+        }
+
+    }
+    
+    button {
+        background-color: $accent-color;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+        border: 0;
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+        border-radius: 5px;
+        width: 150px;
+        height: 50px;
+        line-height: 24px;
+        transition: 0.4s;
+
+        &:hover {
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+

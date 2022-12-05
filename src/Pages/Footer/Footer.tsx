@@ -1,4 +1,7 @@
-import './Footer.scss'
+import './Footer.scss';
+import Logo from "./Logo.png";
+import MessageIcon from "./Message.png";
+import CopyrightIcon from "./Copyright.png";
 
 export const Footer = () => {
     return (
@@ -7,11 +10,11 @@ export const Footer = () => {
                 <ul className="footer">
                     <li>
                         <div className="title">
-                            <img src="./img/Digiency.png" alt="" />
+                            <img src={Logo} alt="" />
                         </div>
                         <div className="content">
                             <div className="text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet libero dis eget maecenas bibendum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis, cursus egestas etiam posuere vitae cursus consectetur eu. Cursus vitae porttitor libero est posuere.
                             </div>
                             <ul className="media">
                                 <li><i className="fa-brands fa-facebook"></i></li>
@@ -58,7 +61,7 @@ export const Footer = () => {
                             <div className="input">
                                 <input type="text" placeholder="info@gmail.com" />
                                 <div className="button">
-                                    <img src="./img/Message.png" alt="" />
+                                    <img src={MessageIcon} alt="" />
                                 </div>
                             </div>
                         </div>
@@ -68,11 +71,11 @@ export const Footer = () => {
             <div className="copyright">
                 <div className="container">
                     <div className="left">
-                        <img src="./img/copyrigt.png" alt="" />
+                        <img src={CopyrightIcon} alt="" />
                         Copyright 2021. All Right Reserved By Ojjomedia
                     </div>
                     <div className="right">
-                        <img src="./img/UpArrow.png" alt="" />
+                            <i className="fa-solid fa-circle-up"></i>
                     </div>
                 </div>
             </div>

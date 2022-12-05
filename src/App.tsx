@@ -1,8 +1,9 @@
-
 import { Route, Routes } from 'react-router-dom';
 import { Home } from './Pages/HomePage/Home';
 import { Footer } from './Pages/Footer/Footer';
+import { Header } from './Pages/Header/Header';
 import './App.css';
+import { BlogPage } from './Pages/BlogPage/BlogPage';
 
 function App() {
   return (
@@ -16,9 +17,13 @@ function App() {
         <link rel="preconnect" href="https://fonts.gstatic.com"  />
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
       </head>
+      <header>
+        <Header />
+      </header>
       <main>
         <Routes>
             <Route path='/' element={<Home/>} />
+            <Route path='/our-blog' element={<BlogPage/>} />
         </Routes>
       </main>
       <Footer/>

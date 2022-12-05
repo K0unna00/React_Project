@@ -8,6 +8,17 @@
     }
 }
 .container{
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
+}
+
+.blog-container{
+    max-width: 770px;
+}
+
+
+@media only screen and (max-width: 376px) {
+    .container{
+        max-width:323px;
+    }    
 }
