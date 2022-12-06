@@ -1,0 +1,114 @@
+@import '../../../../variables';
+
+.clientsFeedback{
+    padding: 60px 0;
+    background-color:$main-background;
+    .container{
+        .subtitle{
+            width: fit-content;
+            margin: 0 auto;
+            color:$second-font-color;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        .title{
+            text-align: center;
+            font-weight: 600;
+            font-size: 39.06px;
+            margin-top:25px;
+            span{
+                color: $accent-color;
+            }
+        }
+        .slider{
+            display: flex;
+            justify-content:space-between;
+            gap:150px;
+            overflow: hidden;
+            .card{
+                margin-top:60px;
+                margin-left: 40px;
+                position: relative;
+                transition: 0.5s;
+                .content{
+                    width: 470px;
+                    padding: 34px 35px 25px 65px;
+                    background-color:$accent-color;
+                    color: white;
+                    .name{
+                        font-weight: 500;
+                        font-size: 25px;
+                    }
+                    .position{
+                        margin-top: 7px;
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                    .text{
+                        margin-top: 23px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 150.6%;
+                    }
+                }
+                img{
+                    top: 25px;
+                    left: -40px;
+                    width: 80px;
+                    position: absolute;
+                }
+            }
+        }
+        .buttons{
+            width: fit-content;
+            margin: 50px auto 0;
+            button{
+                width: 16px;
+                height:15px;
+                border-radius: 50%;
+                border: 0;
+                margin: 0 2px;
+                background-color:#373737;
+            }
+            .active{
+                width: 49px;
+                border-radius: 7.5px;
+                background-color:$accent-color;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .clientsFeedback{
+        .container{
+            .slider{
+                .card{
+                    margin-left: 280px;
+                    .content{
+                        width: 226px;
+                        height: 177px;
+                        overflow: hidden;
+                        text-align: start;
+                        padding: 26px 12px 18px 35px;
+                        .name{
+                            width: 130px;
+                            font-weight: 400;
+                            font-size: 16px;
+                        }
+                        .position{
+                            font-size: 12.8px;
+                            font-weight: 400;
+                        }
+                    }
+                    img{
+                        top: 25px;
+                        left: -20px;
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }    
+}
