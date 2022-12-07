@@ -1,13 +1,13 @@
-import { ContactCard } from '../ContactCard/ContactCard';
-import mail from './mail.svg';
-import phone from './phone-call.svg';
-import location from './map-pin.svg';
-import msgPic from './message-pic.svg';
 import './ContactUs.scss';
+import { ContactCard } from '../ContactCard/ContactCard';
 import frame1 from './Frames/Frame 1.svg';
 import frame2 from './Frames/Frame 2.svg';
 import frame3 from './Frames/Frame 3.svg';
 import frame4 from './Frames/Frame 4.svg';
+import location from './map-pin.svg';
+import mail from './mail.svg';
+import msgPic from './message-pic.svg';
+import phone from './phone-call.svg';
 
 export const ContactUs = () => {
   let descriptionText = `158 ralegih sit, houston, yk 5896,uk`;

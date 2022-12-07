@@ -1,8 +1,8 @@
-import Image from './Image.svg';
-import Timer from './timer.svg';
-import Person from './person.svg';
-import MessageCircle from './message-circle.svg';
 import './FirstBlog.scss';
+import Image from './Image.svg';
+import MessageCircle from './message-circle.svg';
+import Person from './person.svg';
+import Timer from './timer.svg';
 
 export const FirstBlog = () => {
   return (

@@ -1,7 +1,7 @@
 interface MemberProp {
-  image: string,
-  name: string,
-  position: string
+  image: string;
+  name: string;
+  position: string;
 }
 
 export const MemberCard = (props: MemberProp) => {

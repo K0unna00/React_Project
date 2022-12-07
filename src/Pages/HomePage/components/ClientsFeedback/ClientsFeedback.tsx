@@ -1,8 +1,8 @@
-import PP1 from './pp1.png';
-import PP2 from './pp2.png';
 import './ClientsFeedback.scss';
 import { CarouselCard } from '../CarouselCard/CarouselCard';
 import { useState } from 'react';
+import PP1 from './pp1.png';
+import PP2 from './pp2.png';
 
 export const ClientsFeedback = () => {
   let [currentSlideNumber, setCurrentSlideNumber] = useState(0);

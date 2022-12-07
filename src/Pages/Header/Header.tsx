@@ -1,8 +1,8 @@
 import './Header.scss';
-import Logo from './Digiency.svg';
-import Dark from './Dark.svg';
-import MenuIcon from './menuIcon.png';
 import { Link } from 'react-router-dom';
+import Dark from './Dark.svg';
+import Logo from './Digiency.svg';
+import MenuIcon from './menuIcon.png';
 
 export const Header = () => {
   return (

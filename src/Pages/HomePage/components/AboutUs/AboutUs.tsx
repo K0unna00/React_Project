@@ -1,9 +1,9 @@
 import './AboutUs.scss';
-import imgAboutUs from './about-us.svg';
-import fileIcon from './file-icon.svg';
-import codeIcon from './code-icon.svg';
-import settingIcon from './setting-icon.svg';
 import arrowIcon from './arrow-icon.svg';
+import codeIcon from './code-icon.svg';
+import fileIcon from './file-icon.svg';
+import imgAboutUs from './about-us.svg';
+import settingIcon from './setting-icon.svg';
 
 export const AboutUs = () => {
   return (

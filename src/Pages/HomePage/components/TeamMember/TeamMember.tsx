@@ -1,9 +1,9 @@
 import './TeamMember.scss';
+import { MemberCard } from '../MemberCard/MemberCard';
 import mate1 from './teamMate1.png';
 import mate2 from './teamMate2.png';
 import mate3 from './teamMate3.png';
 import mate4 from './teamMate4.png';
-import { MemberCard } from '../MemberCard/MemberCard';
 
 export const TeamMember = () => {
   return (

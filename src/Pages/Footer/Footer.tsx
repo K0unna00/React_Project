@@ -1,7 +1,7 @@
 import './Footer.scss';
+import CopyrightIcon from './Copyright.png';
 import Logo from './Logo.png';
 import MessageIcon from './Message.png';
-import CopyrightIcon from './Copyright.png';
 
 export const Footer = () => {
   return (
