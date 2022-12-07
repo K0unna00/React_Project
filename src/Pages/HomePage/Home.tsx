@@ -1,8 +1,8 @@
-import { AboutUs } from "./components/AboutUs/AboutUs"
-import { ClientsFeedback } from "./components/ClientsFeedback/ClientsFeedback"
-import { ContactUs } from "./components/ContactUs/ContactUs"
-import { Hero } from "./components/Hero/Hero"
-import { TeamMember } from "./components/TeamMember/TeamMember"
+import { AboutUs } from "./components/AboutUs/AboutUs";
+import { ClientsFeedback } from "./components/ClientsFeedback/ClientsFeedback";
+import { ContactUs } from "./components/ContactUs/ContactUs";
+import { Hero } from "./components/Hero/Hero";
+import { TeamMember } from "./components/TeamMember/TeamMember";
 
 export const Home=()=>{
     return(
@@ -13,5 +13,5 @@ export const Home=()=>{
             <ClientsFeedback />
             <ContactUs />
         </div>
-    )
-}
+    );
+};
