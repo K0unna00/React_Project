@@ -6,8 +6,7 @@ import PP2 from './pp2.png';
 
 export const ClientsFeedback = () => {
   let [currentSlideNumber, setCurrentSlideNumber] = useState(0);
-  // const [activeStatus, setActiveStatus] = useState("active");
-  const buttonClickerHandler = (number: number): any => {
+  const buttonClickerHandler = (number: number): void => {
     setCurrentSlideNumber((currentSlideNumber = number));
   };
   return (
@@ -33,9 +32,18 @@ export const ClientsFeedback = () => {
           <CarouselCard name="2" position="CEO,word yt" img={PP2} />
         </div>
         <div className="buttons">
-          <button className="active" onClick={() => buttonClickerHandler(0)}></button>
-          <button onClick={() => buttonClickerHandler(1)}></button>
-          <button onClick={() => buttonClickerHandler(2)}></button>
+          <button
+            className={currentSlideNumber === 0 ? 'active' : ''}
+            onClick={() => buttonClickerHandler(0)}
+          ></button>
+          <button
+            className={currentSlideNumber === 1 ? 'active' : ''}
+            onClick={() => buttonClickerHandler(1)}
+          ></button>
+          <button
+            className={currentSlideNumber === 2 ? 'active' : ''}
+            onClick={() => buttonClickerHandler(2)}
+          ></button>
         </div>
       </div>
     </section>
