@@ -1,10 +1,9 @@
-import { FirstBlog } from "./components/FirstBlog/FirstBlog"
-
+import { FirstBlog } from './components/FirstBlog/FirstBlog';
 
 export const BlogPage = () => {
-    return(
-        <div className="blog">
-            <FirstBlog />
-        </div>
-    )
-}
+  return (
+    <div className="blog">
+      <FirstBlog />
+    </div>
+  );
+};
