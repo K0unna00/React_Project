@@ -21,4 +21,3 @@ export const CarouselCard = (props: ICaroulseCard) => {
     </div>
   );
 };
-
