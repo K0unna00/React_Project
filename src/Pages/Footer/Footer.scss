@@ -45,6 +45,7 @@ footer .footer li .content .input input {
     background-color: transparent;
     padding-left: 18px;
     font-size: 16px;
+    color:white;
 }
 
 footer .footer li .content .input .button {
@@ -87,4 +88,29 @@ footer .footer .media li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .left{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .right{
+        font-size: 34px;
+    }
+}
+@media only screen and (max-width: 376px) {
+    footer{
+        .container{
+            .footer{
+                display: block;
+                text-align: start;
+                li{
+                    margin-top: 50px;
+                    .text{
+                        width: 333px;
+                    }
+                }
+                
+            }
+        }
+    }
 }
