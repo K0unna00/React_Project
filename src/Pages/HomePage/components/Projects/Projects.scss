@@ -1,0 +1,78 @@
+@import "../../../../variables";
+
+.projects {
+  background-color: $main-background;
+  height: 504.75px;
+  margin-top: 90px;
+}
+.experience {
+  margin: 0 auto;
+  width: 1170px;
+  display: flex;
+}
+
+.experience-about {
+  button {
+    width: fit-content;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 22px;
+    color: #ffffff;
+    background-color: $accent-color;
+    font-size: 15px;
+    line-height: 18.54px;
+    filter: drop-shadow(4px 5px 15px rgba(255, 83, 0, 0.4));
+    &:hover {
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+  }
+  .experience-title {
+    h6 {
+      padding-top: 62.25px;
+      margin-bottom: 18.75px;
+      font-size: 12px;
+      font-weight: 400;
+      color: $second-font-color;
+    }
+    h2 {
+      color: $font-color;
+      margin-bottom: 13.5px;
+      font-weight: 600;
+      font-size: 29.29px;
+      line-height: 36.21px;
+      span {
+        color: $accent-color;
+      }
+    }
+  }
+  .experience-text {
+    color: $second-font-color;
+    font-weight: 400;
+    font-size: 11.5px;
+    line-height: 18.1px;
+    margin-bottom: 38px;
+    .first-part {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.experience-card {
+ text-align: center;
+ .card{
+   width: 202.5px;
+   height: 187.5px;
+
+ }
+ .left{
+   display: flex;
+   margin: 45px;
+   color: $font-color;
+   background-color: #ffffff;
+  
+    
+    
+  }
+}
