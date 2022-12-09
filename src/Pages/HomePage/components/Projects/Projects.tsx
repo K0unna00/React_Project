@@ -32,7 +32,7 @@ export const Projects = () => {
           <button>Contact Us</button>
         </div>
         <div className="experience-card">
-          <div className="left">
+          <div className="lefts">
             <div className="card left">
               <p className="number">250+</p>
               <p>Global Customer</p>
@@ -42,7 +42,7 @@ export const Projects = () => {
               <p>Team Member</p>
             </div>
           </div>
-          <div className="right">
+          <div className="rights">
           <div className="card right">
               <p className="number">156+</p>
               <p>Project Completed</p>
