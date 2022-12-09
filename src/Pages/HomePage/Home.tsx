@@ -5,12 +5,13 @@ import { ContactUs } from './components/ContactUs/ContactUs';
 import { Hero } from './components/Hero/Hero';
 import { TeamMember } from './components/TeamMember/TeamMember';
 
-      <Projects />
+      
 export const Home = () => {
   return (
     <div className="home">
       <Hero />
       <AboutUs />
+      <Projects />
       <TeamMember />
       <ClientsFeedback />
       <ContactUs />
