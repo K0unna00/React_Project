@@ -1,9 +1,11 @@
+@import "../../../../variables";
+
 .orange{
-    color: #FF5300;
+    color: $accent-color;
 }
 
 .grey{
-    color: #7B7B7B;
+    color: $second-font-color;
 }
 
 .input-group{
@@ -30,6 +32,9 @@
 
 
 #contact-us{
+    .contact-info{
+        margin-top: 120px;
+    }
     .contact-word{
         text-align: center;
         font-family: 'Work Sans';
