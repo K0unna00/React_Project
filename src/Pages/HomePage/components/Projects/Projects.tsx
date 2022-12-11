@@ -1,5 +1,4 @@
-import "./Projects.scss";
-
+import './Projects.scss';
 export const Projects = () => {
   return (
     <section className="projects">
@@ -15,18 +14,14 @@ export const Projects = () => {
           </div>
           <div className="experience-text">
             <p className="first-part">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               <br />
-              imperdiet at a augue ullamcorper. Leo faucibus feugiat rutrum aenean. <br />
-              Nisi, lectus aliquet aliquam consectetur augue praesent. Lorem
-              <br />
-              vulputate orci eget mi, sed pulvinar.
+              Nascetur imperdiet at a augue ullamcorper. Leo faucibus feugiat rutrum aenean. Nisi, lectus
+              aliquet aliquam consectetur augue praesent. Lorem vulputate orci eget mi, sed pulvinar.
             </p>
             <p>
-              Ornare etiam erat volutpat tempor fringilla mi. Elit a blandit
-              faucibus <br />
-              est, dui interdum ut amet. Adipiscing feugiat vel at posuere in.
-              <br /> Pellentesque volutpat vestibulum.
+              Ornare etiam erat volutpat tempor fringilla mi. Elit a blandit faucibus est, dui interdum ut
+              amet. Adipiscing feugiat vel at posuere in. Pellentesque volutpat vestibulum.
             </p>
           </div>
           <button>Contact Us</button>
@@ -43,7 +38,7 @@ export const Projects = () => {
             </div>
           </div>
           <div className="rights">
-          <div className="card right">
+            <div className="card right">
               <p className="number">156+</p>
               <p>Project Completed</p>
             </div>

@@ -31,14 +31,14 @@
   .experience-title {
     h6 {
       margin-top: 83px;
-      margin-bottom: 18.75px;
-      font-size: 12px;
+      margin-bottom: 25px;
+      font-size: 16px;
       font-weight: 400;
       color: $second-font-color;
     }
     h2 {
       color: $font-color;
-      margin-bottom: 13.5px;
+      margin-bottom: 18px;
       font-weight: 600;
       font-size: 39.06px;
       line-height: 48.28px;
@@ -51,8 +51,8 @@
     color: $second-font-color;
     font-weight: 400;
     font-size: 16px;
-    line-height: 18.1px;
-    margin-bottom: 38px;
+    line-height: 24.1px;
+    margin-bottom: 50px;
     .first-part {
       margin-bottom: 20px;
     }
@@ -70,12 +70,12 @@
     color: $font-color;
     background-color: #ffffff;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
-    &:hover{
+    &:hover {
       filter: drop-shadow(4px 5px 15px rgba(219, 219, 219, 0.4));
     }
-    p{
+    p {
       font-size: 20px;
-      color:#7B7B7B;
+      color: $second-font-color;
       font-weight: 500;
       line-height: 24.72px;
     }
@@ -93,5 +93,46 @@
   }
   .rights {
     margin-top: 83px;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .projects {
+    .experience {
+      width:100%;
+      flex-direction: column;
+      .experience-about {
+        text-align: center;
+        .experience-title {
+          h2 {
+            font-size: 25px;
+            line-height: 30.9px;
+            font-weight: 500;
+          }
+        }
+        .experience-text {
+          font-size: 11.5px;
+        }
+      }
+    }
+    .experience-card {
+      display: grid;
+      justify-content: center;
+      .card {
+      //  width: 343px;
+      //  height: 250px;
+         margin: 0;
+      }
+      .lefts{
+        .left{
+          margin-bottom: 25px;
+        }
+      }
+      .rights {
+        .right{
+          margin-bottom: 25px;
+        }
+        margin-top: 0;
+      }
+    }
   }
 }
