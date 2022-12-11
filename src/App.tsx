@@ -4,6 +4,7 @@ import { Footer } from './Pages/Footer/Footer';
 import { Header } from './Pages/Header/Header';
 import { Home } from './Pages/HomePage/Home';
 import { Route, Routes } from 'react-router-dom';
+import { LoginPage } from './Pages/LoginPage/LoginPage';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/our-blog" element={<BlogPage />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </main>
       <Footer />

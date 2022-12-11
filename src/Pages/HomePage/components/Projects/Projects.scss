@@ -1,7 +1,8 @@
-@import '../../../../variables';
+@import "../../../../variables";
 
 .projects {
   background-color: $main-background;
+  height: 673px;
   margin-top: 90px;
 }
 .experience {
@@ -24,6 +25,7 @@
     filter: drop-shadow(4px 5px 15px rgba(255, 83, 0, 0.4));
     &:hover {
       box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
     }
   }
   .experience-title {
@@ -59,6 +61,7 @@
 
 .experience-card {
   display: flex;
+  margin: auto;
   .card {
     text-align: center;
     margin: 30px;
