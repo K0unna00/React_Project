@@ -1,13 +1,14 @@
 @import "../../../../variables";
 
+
+
+
 .projects {
   background-color: $main-background;
-  height: 673px;
+  // height: 673px;
   margin-top: 90px;
-}
-.experience {
-  margin: 0 auto;
-  width: 1170px;
+
+.container {
   display: flex;
 }
 
@@ -37,6 +38,7 @@
       color: $second-font-color;
     }
     h2 {
+      width: 487px;
       color: $font-color;
       margin-bottom: 18px;
       font-weight: 600;
@@ -95,43 +97,45 @@
     margin-top: 83px;
   }
 }
+}
 @media only screen and (max-width: 376px) {
   .projects {
-    .experience {
+    .container {
       width:100%;
       flex-direction: column;
       .experience-about {
         text-align: center;
         .experience-title {
+          // text-align: center;
           h2 {
+            width: 255px;
             font-size: 25px;
             line-height: 30.9px;
             font-weight: 500;
+            margin: 0 auto;
           }
         }
         .experience-text {
-          font-size: 11.5px;
+          line-height: 150.6%;
+          margin:18px 27px;
+          // font-size: 11.5px;
+          .first-part{
+            font-size: 16px;
+          }
         }
       }
     }
     .experience-card {
-      display: grid;
+      flex-wrap: wrap;
+      // display: grid;
       justify-content: center;
       .card {
       //  width: 343px;
       //  height: 250px;
-         margin: 0;
-      }
-      .lefts{
-        .left{
-          margin-bottom: 25px;
-        }
+         margin: 30px 0;
       }
       .rights {
-        .right{
-          margin-bottom: 25px;
-        }
-        margin-top: 0;
+        margin-top: -30px;
       }
     }
   }

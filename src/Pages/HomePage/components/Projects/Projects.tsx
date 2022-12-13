@@ -2,14 +2,12 @@ import './Projects.scss';
 export const Projects = () => {
   return (
     <section className="projects">
-      <div className="experience">
+      <div className="container">
         <div className="experience-about">
           <div className="experience-title">
             <h6>Our Experience</h6>
             <h2>
-              We Have Completed <span>150+</span>
-              <br />
-              <span>Projects</span> Succesfully
+              We Have Completed <span>150+ Projects</span> Succesfully
             </h2>
           </div>
           <div className="experience-text">
