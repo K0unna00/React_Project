@@ -1,6 +1,15 @@
 import './LoginPage.scss';
+import { Link } from 'react-router-dom';
+import { loginSlice } from './redux/loginPageSlice';
+import { useDispatch } from 'react-redux';
 
 export const LoginPage = () => {
+  const dispatch = useDispatch();
+
+  const onLoginPress = (e: any) => {
+    dispatch(loginSlice.actions.setLoginUser({ email: 'Salam', password: '********' }));
+  };
+
   return (
     <section id="login">
       <div className="container-narrow">
@@ -8,7 +17,7 @@ export const LoginPage = () => {
           <h1>Login</h1>
         </div>
         <div className="login-body">
-          <form action="post">
+          <form>
             <div className="input-group">
               <input type="text" placeholder="User Name" />
             </div>
@@ -23,7 +32,11 @@ export const LoginPage = () => {
               <a href=" ">Forget Password</a>
             </div>
             <div className="input-group">
-                <button type="submit">Login</button>
+              <Link to={'/'}>
+                <button onClick={onLoginPress} type="submit">
+                  Login
+                </button>
+              </Link>
             </div>
           </form>
         </div>
