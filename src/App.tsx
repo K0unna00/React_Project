@@ -3,8 +3,9 @@ import { BlogPage } from './Pages/BlogPage/BlogPage';
 import { Footer } from './Pages/Footer/Footer';
 import { Header } from './Pages/Header/Header';
 import { Home } from './Pages/HomePage/Home';
-import { Route, Routes } from 'react-router-dom';
 import { LoginPage } from './Pages/LoginPage/LoginPage';
+import { RegisterPage } from './Pages/RegisterPage/RegisterPage';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/our-blog" element={<BlogPage />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
         </Routes>
       </main>
       <Footer />
