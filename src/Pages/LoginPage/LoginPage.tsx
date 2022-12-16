@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 export const LoginPage = () => {
   const dispatch = useDispatch();
 
-  const onLoginPress = (e: any) => {
+  const onLoginPress = () => {
     dispatch(loginSlice.actions.setLoginUser({ email: 'Salam', password: '********' }));
   };
 

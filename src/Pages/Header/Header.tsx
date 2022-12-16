@@ -21,7 +21,7 @@ export const Header = () => {
           <a href="/#">Our Work</a>
           <a href="/#">Clients</a>
           <Link to="/our-blog">Our Blog</Link>
-          <Link to="/login">{login.isSigned ? 'Bextiyar' : 'Profile'}</Link>
+          <Link to="/login">{login.isSigned ? 'Profile' : 'Log In'}</Link>
         </div>
         <img className="dark-mode-btn" src={Dark} alt="" />
         <img className="menu-btn" src={MenuIcon} alt="" />
