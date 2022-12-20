@@ -1,0 +1,35 @@
+@import '../../../../variables';
+.blog-hero {
+  background-color: $main-background;
+  .container {
+    padding: 153px 0;
+    .hero-text {
+      text-align: center;
+      color: $font-color;
+      h1 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59.33px;
+      }
+      h6 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24.1px;
+        margin-top: 18px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 376px) {
+  .blog-hero {
+    .container {
+      .hero-text {
+        h1 {
+          font-weight: 600;
+          font-size: 31.25px;
+          line-height: 38.62px;
+        }
+      }
+    }
+  }
+}
