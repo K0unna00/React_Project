@@ -9,11 +9,10 @@ import { useEffect } from 'react';
 export const BlogPage = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    fetch(`${baseURL}/blogs`)
+    fetch(`${baseURL}/blog`)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        
         dispatch(blogPageSlice.actions.setBlog(data));
       });
   }, []);

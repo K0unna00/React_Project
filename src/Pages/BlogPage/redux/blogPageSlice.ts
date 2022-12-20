@@ -17,11 +17,11 @@ const initialState: IBlogState = {
 };
 
 export const blogPageSlice = createSlice({
-  name: 'blogs',
+  name: 'blog',
   initialState,
   reducers: {
-    setBlog: (state, action: PayloadAction<BlogItem>) => {
-      state.blogs = [...state.blogs, action.payload];
+    setBlog: (state, action: PayloadAction<BlogItem[]>) => {
+      state.blogs = action.payload;
     },
   },
 });

@@ -55,7 +55,7 @@ section.first-blog{
         height: 50px;
         line-height: 24px;
         transition: 0.4s;
-
+        filter: drop-shadow(4px 5px 15px rgba(216, 124, 78, 0.779));
         &:hover {
             box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
         }
