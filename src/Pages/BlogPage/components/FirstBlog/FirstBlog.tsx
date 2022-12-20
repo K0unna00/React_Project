@@ -4,7 +4,15 @@ import MessageCircle from './message-circle.svg';
 import Person from './person.svg';
 import Timer from './timer.svg';
 
-export const FirstBlog = () => {
+interface IBlogProps {
+  title: string;
+  author: string;
+  date: string;
+  commentCount: number;
+  text: string;
+}
+export const FirstBlog = (props: IBlogProps) => {
+  const { title, author, date, commentCount, text } = props;
   return (
     <section className="first-blog">
       <div className="container">
@@ -12,23 +20,18 @@ export const FirstBlog = () => {
           <img src={Image} alt="" />
           <div className="blog-data">
             <div className="date">
-              <img src={Timer} alt="" /> <span>January 25, 2021</span>
+              <img src={Timer} alt="" /> <span>{date}</span>
             </div>
             <div className="autor-name">
-              <img src={Person} alt="" /> <span>Cristofer Westervelt</span>
+              <img src={Person} alt="" /> <span>{author}</span>
             </div>
             <div className="comments">
-              <img src={MessageCircle} alt="" /> <span>10 Comment</span>
+              <img src={MessageCircle} alt="" /> <span>{commentCount} comment</span>
             </div>
           </div>
           <div className="text">
-            <h1>35 Stellar Graphic Design Blogs to Keep You Educated and Inspired</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices facilisi sed tincidunt mauris
-              duis pulvinar convallis eu. Lobortis scelerisque aliquam massa arcu, eget. Sociis odio quis eget
-              lacus. Dolor at enim viverra laoreet molestie amet cursus et. Sed lacus, viverra lacinia
-              scelerisque cras aliquam blandit.
-            </p>
+            <h1>{title}</h1>
+            <p>{text}</p>
           </div>
           <button>Read More</button>
         </div>
