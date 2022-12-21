@@ -1,11 +1,17 @@
 import './ClientsFeedback.scss';
 import { CarouselCard } from '../CarouselCard/CarouselCard';
+import { RootState } from '../../../../modules/redux/store';
+import { useSelector } from 'react-redux';
 import { useState } from 'react';
 import PP1 from './pp1.png';
-import PP2 from './pp2.png';
 
 export const ClientsFeedback = () => {
   let [currentSlideNumber, setCurrentSlideNumber] = useState(0);
+
+  const { feedbacks } = useSelector((state: RootState) => state.feedback);
+
+  console.log(feedbacks);
+
   const buttonClickerHandler = (number: number): void => {
     setCurrentSlideNumber((currentSlideNumber = number));
   };
@@ -21,15 +27,16 @@ export const ClientsFeedback = () => {
           From Our Clients
         </div>
         <div className="slider">
-          <CarouselCard
-            name="Justin Septimus"
-            position="CEO,word yt"
-            img={PP1}
-            marginLeft={`${-660 * currentSlideNumber + 40}px`}
-          />
-          <CarouselCard name="Ashlynn Gouse" position="Managing Director" img={PP2} />
-          <CarouselCard name="1" position="CEO,word yt" img={PP1} />
-          <CarouselCard name="2" position="CEO,word yt" img={PP2} />
+          {feedbacks.map((item, index) => {
+            return (
+              <CarouselCard
+                name={item.name}
+                position={item.position}
+                img={PP1}
+                marginLeft={`${-660 * currentSlideNumber + 40}px`}
+              />
+            );
+          })}
         </div>
         <div className="buttons">
           <button
