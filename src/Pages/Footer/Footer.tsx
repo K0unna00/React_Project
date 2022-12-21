@@ -1,7 +1,8 @@
 import './Footer.scss';
-import CopyrightIcon from './Copyright.png';
-import Logo from './Logo.png';
-import MessageIcon from './Message.png';
+import CopyrightIcon from './Copyright.svg';
+import Logo from './Digiency.svg';
+import MessageIcon from './Message.svg';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
@@ -37,11 +38,11 @@ export const Footer = () => {
             <div className="title">Company</div>
             <div className="content">
               <ul>
-                <li>About Us</li>
-                <li>Our Work</li>
-                <li>Client</li>
-                <li>Blog</li>
-                <li>Contact Us</li>
+                <li><Link className='links' to= '/about-us'>About Us</Link></li>
+                <li><Link className='links' to='/our-work'>Our Work</Link></li>
+                <li><Link className='links' to='/clients'>Client</Link></li>
+                <li><Link className='links' to='/our-blog'>Our Blog</Link></li>
+                <li><Link className='links' to='/contact-us'>Contact Us</Link></li>
               </ul>
             </div>
           </li>

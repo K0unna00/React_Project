@@ -19,11 +19,11 @@ export const Header = () => {
         </Link>
         <div className="navbar">
           <Link to="/">Home</Link>
-          <a href="/#">About Us</a>
-          <a href="/#">Our Work</a>
-          <a href="/#">Clients</a>
+          <Link to="/about-us">About Us</Link>
+          <Link to="/our-work">Our Work</Link>
+          <Link to="/clients">Clients</Link>
           <Link to="/our-blog">Our Blog</Link>
-          <Link to="/login">{login.isSigned ? 'Profile' : 'Log In'}</Link>
+          <Link to="/login">{login.isSigned ? <Link to= '/profile'>Profile</Link> : 'Log In'}</Link>
         </div>
         <img className="dark-mode-btn" src={Dark} alt="" />
         <img className="menu-btn" src={MenuIcon} alt="" />
