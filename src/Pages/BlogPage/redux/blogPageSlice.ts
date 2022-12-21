@@ -1,6 +1,7 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 
 type BlogItem = {
+  id: number;
   title: string;
   author: string;
   date: string;

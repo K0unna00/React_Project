@@ -7,23 +7,22 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 
 export const BlogPage = () => {
-  const dispatch = useDispatch();
   useEffect(() => {
     fetch(`${baseURL}/blog`)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         dispatch(blogPageSlice.actions.setBlog(data));
       });
   }, []);
+  const dispatch = useDispatch();
   const { blogs } = useSelector((state: RootState) => state.blog);
-  // console.log(blogs);
 
   return (
     <div className="blog">
       <BlogHero />
       {blogs.map((blog) => (
         <FirstBlog
+          key={blog.id}
           title={blog.title}
           author={blog.author}
           date={blog.date}
