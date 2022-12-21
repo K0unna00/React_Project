@@ -45,6 +45,26 @@ export const ClientsFeedback = () => {
             onClick={() => buttonClickerHandler(2)}
           ></button>
         </div>
+        {/* <div className="slider">
+          {feedbacks.map((item, index) => {
+            return (
+              <CarouselCard
+                name={item.name}
+                position={item.position}
+                img={PP1}
+                marginLeft={index === 0 ? `${-660 * currentSlideNumber + (index + 1) * 40}px` : '0px'}
+              />
+            );
+          })}
+        </div>
+        <div className="buttons">
+          {feedbacks.map((item, index) => (
+            <button
+              className={currentSlideNumber === 0 ? 'active' : ''}
+              onClick={() => buttonClickerHandler(index)}
+            ></button>
+          ))}
+        </div> */}
       </div>
     </section>
   );
