@@ -4,6 +4,7 @@ footer {
     padding-top: 66px;
     color: white;
     background-color: #373737;
+    margin-top: 120px;
 }
 
 footer .footer {
@@ -20,6 +21,10 @@ footer .footer li .title {
     font-weight: 600;
     font-size: 39.06px;
     line-height: 123.6%;
+    img{
+        width: 162px;
+        height: 48px;
+    }
 }
 
 footer .footer li .content {
@@ -27,6 +32,11 @@ footer .footer li .content {
     font-weight: 400;
     font-size: 16px;
     line-height: 150.6%;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
 }
 
 footer .footer li .content li {

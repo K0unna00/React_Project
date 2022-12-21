@@ -6,6 +6,8 @@ import { Home } from './Pages/HomePage/Home';
 import { LoginPage } from './Pages/LoginPage/LoginPage';
 import { RegisterPage } from './Pages/RegisterPage/RegisterPage';
 import { Route, Routes } from 'react-router-dom';
+import { Profile } from './Pages/Profile/Profile';
+import { AboutUs } from './Pages/HomePage/components/AboutUs/AboutUs';
 
 function App() {
   return (
@@ -32,8 +34,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/our-blog" element={<BlogPage />} />
+          <Route path="/about-us" element={<AboutUs />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </main>
       <Footer />
