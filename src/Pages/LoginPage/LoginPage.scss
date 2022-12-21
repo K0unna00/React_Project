@@ -1,41 +1,48 @@
 @import "../../variables";
 
-.container-narrow{
+.container-narrow {
     max-width: 600px;
     margin: 0 auto;
 }
 
-.input-group{
-    input:focus{
+.input-group {
+    input:focus {
         outline: none !important;
     }
 }
 
-#login{
-    .login-header{
+#login {
+    .login-header {
         margin-top: 120px;
-        h1{
+
+        h1 {
             text-align: center;
             font-size: 38px;
             color: $font-color;
         }
     }
-    .login-body{
+
+    .login-body {
         margin: 40px 0px 120px 0px;
-        .input-group{
+
+        .input-group {
             margin-top: 20px;
             justify-content: space-between;
-            a{
+
+            a {
                 text-decoration: none;
                 color: $font-color;
             }
-            input{
+
+            input {
                 font-size: 18px;
             }
-            input[type="checkbox"]{
+
+            input[type="checkbox"] {
                 width: 20px;
             }
-            .remember-me{
+
+            .remember-me {
                 display: flex;
             }
             button{
@@ -56,15 +63,23 @@
                 }
             }
         }
-        .input-group:last-child{
+
+        .last {
             justify-content: center;
+        }
+
+        .register {
+            display: flex;
+            justify-content: flex-end;
+            text-decoration: none;
+            color: $second-font-color;
         }
     }
 }
 
 @media screen and (max-width: 376px) {
-    #login{
-        .container-narrow{
+    #login {
+        .container-narrow {
             max-width: 323px;
         }
     }

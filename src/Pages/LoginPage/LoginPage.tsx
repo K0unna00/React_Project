@@ -31,11 +31,16 @@ export const LoginPage = () => {
               </div>
               <a href=" ">Forget Password</a>
             </div>
-            <div className="input-group">
+            <div className="input-group last">
               <Link to={'/'}>
                 <button onClick={onLoginPress} type="submit">
                   Login
                 </button>
+              </Link>
+            </div>
+            <div>
+              <Link to="/register" className="register">
+                <i>Register</i>
               </Link>
             </div>
           </form>
