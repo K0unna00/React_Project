@@ -1,104 +1,123 @@
-@import "../../../../variables";
+@import '../../../../variables';
 
 .hero {
-    position: relative;
-    background-color: $main-background;
+  position: relative;
+  background-color: $main-background;
 
-    .container {
-        display: flex;
-        justify-content: space-between;
-        padding: 153px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 153px 0;
 
-        .left {
-            width: 42%;
-            .title{
-                font-weight: 600;
-                font-size: 48px;
-                span{
-                    color: $accent-color;
-                }
-            }
-            .text {
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 150.6%;
-                color: $second-font-color;
-                margin-top: 11px;
-            }
-
-            button {
-                margin-top: 60px;
-                background-color: $accent-color;
-                box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
-                border: 0;
-                color: white;
-                font-weight: 500;
-                font-size: 20px;
-                border-radius: 5px;
-                width: 150px;
-                height: 50px;
-                transition: 0.4s;
-
-                &:hover {
-
-                    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
-                }
-            }
+    .left {
+      width: 42%;
+      .title {
+        font-weight: 600;
+        font-size: 48px;
+        span {
+          color: $accent-color;
         }
+      }
+      .text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150.6%;
+        color: $second-font-color;
+        margin-top: 11px;
+      }
 
-        .right {
-            width: 50%;
+      button {
+        margin-top: 60px;
+        background-color: $accent-color;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+        border: 0;
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+        border-radius: 5px;
+        width: 150px;
+        height: 50px;
+        transition: 0.4s;
 
-            img {
-                width: 100%;
-            }
+        &:hover {
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
         }
+      }
     }
 
-    .media {
-        position: absolute;
-        top: 217px;
-        right: 0;
+    .right {
+      width: 50%;
+      animation: up-down 2s ease-in-out infinite alternate-reverse both;
 
-        li {
-            box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
-            width: 40px;
-            height: 40px;
-            font-size: 22px;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 5px;
-            transition: 0.4s;
-
-            &:hover {
-                color: white;
-                background-color: $accent-color;
-                box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
-            }
+      @-webkit-keyframes up-down {
+        0% {
+          transform: translateY(10px);
         }
+
+        100% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes up-down {
+        0% {
+          transform: translateY(10px);
+        }
+
+        100% {
+          transform: translateY(-10px);
+        }
+      }
+      img {
+        width: 100%;
+      }
     }
+  }
+
+  .media {
+    position: absolute;
+    top: 217px;
+    right: 0;
+
+    li {
+      box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
+      width: 40px;
+      height: 40px;
+      font-size: 22px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5px;
+      transition: 0.4s;
+
+      &:hover {
+        color: white;
+        background-color: $accent-color;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
 }
 @media only screen and (max-width: 376px) {
-    .hero {
-        .container {
-            display: block;
-            .left {
-                width: 100%;
-                text-align: center;
-                .title{
-                    font-size: 48px;
-                    font-size: 31px;
-                }
-            }
-            .right{
-                margin-top: 30px;
-                width: 100%;
-            }
+  .hero {
+    .container {
+      display: block;
+      .left {
+        width: 100%;
+        text-align: center;
+        .title {
+          font-size: 48px;
+          font-size: 31px;
         }
-        .media{
-            display: none;
-        }
+      }
+      .right {
+        margin-top: 30px;
+        width: 100%;
+      }
     }
+    .media {
+      display: none;
+    }
+  }
 }
