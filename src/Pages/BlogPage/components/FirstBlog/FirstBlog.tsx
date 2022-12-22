@@ -17,16 +17,16 @@ export const FirstBlog = (props: IBlogProps) => {
     <section className="first-blog">
       <div className="container">
         <div className="blog-container">
-          <img src={Image} alt="" />
+          <img src={Image} alt="BlogImage" />
           <div className="blog-data">
             <div className="date">
-              <img src={Timer} alt="" /> <span>{date}</span>
+              <img src={Timer} alt="TimerIcon" /> <span>{date}</span>
             </div>
             <div className="autor-name">
-              <img src={Person} alt="" /> <span>{author}</span>
+              <img src={Person} alt="PersonPhoto" /> <span>{author}</span>
             </div>
             <div className="comments">
-              <img src={MessageCircle} alt="" /> <span>{commentCount} comment</span>
+              <img src={MessageCircle} alt="MessageCircleIcon" /> <span>{commentCount} comment</span>
             </div>
           </div>
           <div className="text">
