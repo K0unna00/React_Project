@@ -2,6 +2,7 @@ import './Profile.scss';
 import { RootState } from '../../modules/redux/store';
 import { useSelector } from 'react-redux';
 import Hasbullah from './hasbulla.jpg';
+import { useEffect } from 'react';
 
 export const Profile = () => {
   const user = useSelector((state: RootState) => state.login);

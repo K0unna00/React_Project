@@ -24,11 +24,5 @@ export const loginSlice = createSlice({
       state.firstName = action.payload.firstName;
       state.lastName = action.payload.lastName;
     },
-    // logIn: (state, action: PayloadAction<LoginUserPayload>) => {
-    //   state.userInfo = action.payload.user;
-    // },
-    // logOut: (state) => {
-    //   state.userInfo = undefined;
-    // },
   },
 });

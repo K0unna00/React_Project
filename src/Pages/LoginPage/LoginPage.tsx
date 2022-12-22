@@ -27,9 +27,6 @@ export const LoginPage = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
-        // setNavigate(true);
-        setValueInLocalStorage('authToken', data.access_token);
         const user: User = {
           id: data.id,
           firstName: data.firstName,
@@ -38,6 +35,7 @@ export const LoginPage = () => {
           password: data.email,
         };
         dispatch(loginSlice.actions.setLoginUser(user));
+        setValueInLocalStorage('user', JSON.stringify(user));
         navigate('/');
       });
   };
