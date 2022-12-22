@@ -1,5 +1,5 @@
 import './LoginPage.scss';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { User } from '../../models/user';
 import { baseURL } from '../../constants';
@@ -13,7 +13,7 @@ type LoginFormData = {
 };
 
 export const LoginPage = () => {
-  const linkState = false;
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const { register, handleSubmit } = useForm<LoginFormData>();
   const onSubmit: SubmitHandler<LoginFormData> = (data) => {
@@ -27,6 +27,8 @@ export const LoginPage = () => {
     })
       .then((response) => response.json())
       .then((data) => {
+        console.log(data);
+        // setNavigate(true);
         setValueInLocalStorage('authToken', data.access_token);
         const user: User = {
           id: data.id,
@@ -36,6 +38,7 @@ export const LoginPage = () => {
           password: data.email,
         };
         dispatch(loginSlice.actions.setLoginUser(user));
+        navigate('/');
       });
   };
 
@@ -65,12 +68,6 @@ export const LoginPage = () => {
               <a href=" ">Forget Password</a>
             </div>
             <div className="input-group last">
-              {/* <Link
-                to={{
-                  pathname: "/",
-                  state: { linkState: true }
-                }}
-              /> */}
               <button type="submit">Login</button>
             </div>
             <div>
