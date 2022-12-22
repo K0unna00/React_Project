@@ -24,7 +24,11 @@
         margin: 40px 0px 120px 0px;
         .input-group{
             margin-top: 20px;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            p{
+                margin-left: 5px;
+                color: red;
+            }
             a{
                 text-decoration: none;
                 color: $font-color;
