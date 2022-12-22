@@ -20,9 +20,9 @@ export const AboutUs = () => {
               <span>
                 {' '}
                 Making <br />
-                Ideas Better
+                Ideas Better 
               </span>
-              For Everyone
+                For Everyone
             </h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur imperdiet at a augue
