@@ -12,7 +12,7 @@ export const Profile = () => {
         <img id="hasbulla" src={Hasbullah} alt="" />
         <div className="head-name">
           <h1>
-            My name is <span>{user.firstName}</span>. Digital Product Designer
+            Greetings, <span>{user.firstName}</span>. Digital Product Designer
           </h1>
         </div>
         <div className="about">

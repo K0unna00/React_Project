@@ -13,6 +13,7 @@ type LoginFormData = {
 };
 
 export const LoginPage = () => {
+  const linkState = false;
   const dispatch = useDispatch();
   const { register, handleSubmit } = useForm<LoginFormData>();
   const onSubmit: SubmitHandler<LoginFormData> = (data) => {
@@ -64,6 +65,12 @@ export const LoginPage = () => {
               <a href=" ">Forget Password</a>
             </div>
             <div className="input-group last">
+              {/* <Link
+                to={{
+                  pathname: "/",
+                  state: { linkState: true }
+                }}
+              /> */}
               <button type="submit">Login</button>
             </div>
             <div>
