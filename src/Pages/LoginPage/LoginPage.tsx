@@ -16,6 +16,7 @@ export const LoginPage = () => {
   const dispatch = useDispatch();
   const { register, handleSubmit } = useForm<LoginFormData>();
   const onSubmit: SubmitHandler<LoginFormData> = (data) => {
+    // console.log(data);
     fetch(`${baseURL}/users/login`, {
       method: 'POST',
       body: JSON.stringify(data),
