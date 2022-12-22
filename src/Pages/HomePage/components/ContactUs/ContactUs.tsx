@@ -76,7 +76,7 @@ export const ContactUs = () => {
         </div>
         <div className="map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d67084.07687790766!2d-122.35640598036014!3d37.55272270390706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f9e60efa95545%3A0xfd8efcf42dcc1ba7!2sSan%20Mateo%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1670159468084!5m2!1sen!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8594.252853589076!2d49.71585139108298!3d40.397169452167866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4030812a5a383cf3%3A0x9162d867f69b245c!2zUW9idSDEsG1hbSDGj2xpIE3JmXNjaWRp!5e0!3m2!1str!2s!4v1671728572670!5m2!1str!2s"
             width="600"
             height="450"
             loading="lazy"

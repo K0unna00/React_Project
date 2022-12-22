@@ -1,5 +1,7 @@
+import './BlogPage.scss';
 import { BlogHero } from './components/BlogHero/BlogHero';
 import { FirstBlog } from './components/FirstBlog/FirstBlog';
+import { RightBar } from './components/RightBar/RightBar';
 import { RootState } from '../../modules/redux/store';
 import { baseURL } from '../../constants';
 import { blogPageSlice } from './redux/blogPageSlice';
@@ -20,16 +22,22 @@ export const BlogPage = () => {
   return (
     <div className="blog">
       <BlogHero />
-      {blogs.map((blog) => (
-        <FirstBlog
-          key={blog.id}
-          title={blog.title}
-          author={blog.author}
-          date={blog.date}
-          commentCount={blog.commentCount}
-          text={blog.text}
-        />
-      ))}
+      <div className="container">
+        <div className="map">
+          {blogs.map((blog) => (
+            <FirstBlog
+              key={blog.id}
+              title={blog.title}
+              author={blog.author}
+              date={blog.date}
+              commentCount={blog.commentCount}
+              text={blog.text}
+              image={blog.image}
+            />
+          ))}
+        </div>
+        <RightBar />
+      </div>
     </div>
   );
 };

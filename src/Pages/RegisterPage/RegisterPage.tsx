@@ -3,6 +3,7 @@ import * as yup from 'yup';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { baseURL } from '../../constants';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { useNavigate } from 'react-router-dom';
 
 type RegisterFormData = {
   firstName: string;
@@ -27,6 +28,7 @@ const schema = yup
   .required();
 
 export const RegisterPage = () => {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -35,13 +37,17 @@ export const RegisterPage = () => {
     resolver: yupResolver(schema),
   });
   const onSubmit: SubmitHandler<RegisterFormData> = (data) => {
-    fetch(`${baseURL}/users`, {
+    fetch(`${baseURL}/users/register`, {
       method: 'POST',
       body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json',
+      },
     })
       .then((response) => response.json())
       .then((data) => {
         alert(data);
+        navigate('/login');
       });
   };
   return (

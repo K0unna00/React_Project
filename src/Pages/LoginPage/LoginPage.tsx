@@ -1,14 +1,50 @@
 import './LoginPage.scss';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { SubmitHandler, useForm } from 'react-hook-form';
+import { User } from '../../models/user';
+import { baseURL } from '../../constants';
 import { loginSlice } from './redux/loginPageSlice';
+import { setValueInLocalStorage } from '../../services/localStorage.service';
 import { useDispatch } from 'react-redux';
 
-export const LoginPage = () => {
-  const dispatch = useDispatch();
+type LoginFormData = {
+  email: string;
+  password: string;
+};
 
-  const onLoginPress = () => {
-    dispatch(loginSlice.actions.setLoginUser({ email: 'Salam', password: '********' }));
+export const LoginPage = () => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const { register, handleSubmit } = useForm<LoginFormData>();
+  const onSubmit: SubmitHandler<LoginFormData> = (data) => {
+    // console.log(data);
+    fetch(`${baseURL}/users/login`, {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        // setNavigate(true);
+        setValueInLocalStorage('authToken', data.access_token);
+        const user: User = {
+          id: data.id,
+          firstName: data.firstName,
+          lastName: data.lastName,
+          email: data.email,
+          password: data.email,
+        };
+        dispatch(loginSlice.actions.setLoginUser(user));
+        navigate('/');
+      });
   };
+
+  // const onLoginPress = () => {
+  //   dispatch(loginSlice.actions.setLoginUser({ email: 'Salam', password: '********' }));
+  // };
 
   return (
     <section id="login">
@@ -17,12 +53,12 @@ export const LoginPage = () => {
           <h1>Login</h1>
         </div>
         <div className="login-body">
-          <form>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div className="input-group">
-              <input type="text" placeholder="User Name" />
+              <input type="text" placeholder="Email" {...register('email')} />
             </div>
             <div className="input-group">
-              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Password" {...register('password')} />
             </div>
             <div className="input-group">
               <div className="remember-me">
@@ -32,11 +68,7 @@ export const LoginPage = () => {
               <a href=" ">Forget Password</a>
             </div>
             <div className="input-group last">
-              <Link to={'/'}>
-                <button onClick={onLoginPress} type="submit">
-                  Login
-                </button>
-              </Link>
+              <button type="submit">Login</button>
             </div>
             <div>
               <Link to="/register" className="register">
