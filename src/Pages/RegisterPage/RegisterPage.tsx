@@ -20,7 +20,7 @@ export const RegisterPage = () => {
       .then((response) => response.json())
       .then((data) => {
         alert(data);
-        console.log(data);
+        // console.log(data);
       });
   };
   return (

@@ -1,4 +1,5 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import { User } from '../../../models/user';
 
 export interface ILoginState {
   email: string;
@@ -9,17 +10,25 @@ export interface ILoginState {
 const initialState = {
   email: '',
   password: '',
-  isSigned: false,
+  firstName: '',
+  lastName: '',
 };
 
 export const loginSlice = createSlice({
   name: 'login',
   initialState,
   reducers: {
-    setLoginUser: (state, action: PayloadAction<{ email: string; password: string }>) => {
-      state.email = action.payload.email;
+    setLoginUser: (state, action: PayloadAction<User>) => {
+      state.email = action.payload.firstName;
       state.password = action.payload.password;
-      state.isSigned = true;
+      state.firstName = action.payload.firstName;
+      state.lastName = action.payload.lastName;
     },
+    // logIn: (state, action: PayloadAction<LoginUserPayload>) => {
+    //   state.userInfo = action.payload.user;
+    // },
+    // logOut: (state) => {
+    //   state.userInfo = undefined;
+    // },
   },
 });

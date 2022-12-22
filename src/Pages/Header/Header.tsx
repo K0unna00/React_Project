@@ -23,7 +23,7 @@ export const Header = () => {
           <Link to="/our-work">Our Work</Link>
           <Link to="/clients">Clients</Link>
           <Link to="/our-blog">Our Blog</Link>
-          <Link to="/login">{login.isSigned ? <Link to= '/profile'>Profile</Link> : 'Log In'}</Link>
+          <Link to="/login">{login.email ? <Link to="/profile">Profile</Link> : 'Log In'}</Link>
         </div>
         <img className="dark-mode-btn" src={Dark} alt="" />
         <img className="menu-btn" src={MenuIcon} alt="" />
