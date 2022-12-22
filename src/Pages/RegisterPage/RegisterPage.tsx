@@ -35,9 +35,13 @@ export const RegisterPage = () => {
     resolver: yupResolver(schema),
   });
   const onSubmit: SubmitHandler<RegisterFormData> = (data) => {
-    fetch(`${baseURL}/users`, {
+    console.log(data);
+    fetch(`${baseURL}/users/register`, {
       method: 'POST',
       body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json',
+      },
     })
       .then((response) => response.json())
       .then((data) => {
