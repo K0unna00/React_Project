@@ -1,28 +1,28 @@
 import './RegisterPage.scss';
-// import { SubmitHandler, useForm } from 'react-hook-form';
-// import { baseURL } from '../../constants';
+import { SubmitHandler, useForm } from 'react-hook-form';
+import { baseURL } from '../../constants';
 
-// type RegisterFormData = {
-//   firstName: string;
-//   lastName: string;
-//   email: string;
-//   password: string;
-//   repeatPassword: string;
-// };
+type RegisterFormData = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  password: string;
+  repeatPassword: string;
+};
 
 export const RegisterPage = () => {
-  // const { register, handleSubmit } = useForm<RegisterFormData>();
-  // const onSubmit: SubmitHandler<RegisterFormData> = (data) => {
-  //   fetch(`${baseURL}/users`, {
-  //     method: 'POST',
-  //     body: JSON.stringify(data),
-  //   })
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       alert(data);
-  //       console.log(data);
-  //     });
-  // };
+  const { register, handleSubmit } = useForm<RegisterFormData>();
+  const onSubmit: SubmitHandler<RegisterFormData> = (data) => {
+    fetch(`${baseURL}/users`, {
+      method: 'POST',
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        alert(data);
+        console.log(data);
+      });
+  };
   return (
     <section id="register">
       <div className="container-narrow">
@@ -30,7 +30,7 @@ export const RegisterPage = () => {
           <h1>Register</h1>
         </div>
         <div className="register-body">
-          {/* <form onSubmit={handleSubmit(onSubmit)}>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div className="input-group">
               <input type="text" placeholder="First Name" {...register('firstName')} />
             </div>
@@ -49,7 +49,7 @@ export const RegisterPage = () => {
             <div className="input-group">
               <button type="submit">Register</button>
             </div>
-          </form> */}
+          </form>
         </div>
       </div>
     </section>
