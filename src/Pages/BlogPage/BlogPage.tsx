@@ -22,7 +22,7 @@ export const BlogPage = () => {
   return (
     <div className="blog">
       <BlogHero />
-      <div className="blog-content">
+      <div className="container">
         <div className="map">
           {blogs.map((blog) => (
             <FirstBlog

@@ -47,7 +47,7 @@
 
     .right {
       width: 50%;
-      animation: up-down 2s ease-in-out infinite alternate-reverse both;
+      animation: slide 2s ease-in-out 1 alternate-reverse both;
 
       @-webkit-keyframes up-down {
         0% {
@@ -61,11 +61,25 @@
 
       @keyframes up-down {
         0% {
+          animation-delay: 2s;
           transform: translateY(10px);
         }
 
         100% {
           transform: translateY(-10px);
+        }
+      }
+      @keyframes slide {
+        0% {
+          transform: translateX(0);
+          opacity: 1;
+          animation-delay: 2s;
+          transform: translateY(100);
+        }
+
+        100% {
+          transform: translateX(150px);
+          opacity: 0;
         }
       }
       img {
