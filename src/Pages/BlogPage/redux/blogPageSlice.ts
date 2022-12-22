@@ -7,6 +7,7 @@ type BlogItem = {
   date: string;
   commentCount: number;
   text: string;
+  image: string;
 };
 
 export interface IBlogState {

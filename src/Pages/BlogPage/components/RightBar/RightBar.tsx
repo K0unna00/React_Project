@@ -63,6 +63,58 @@ export const RightBar = () => {
               </div>
             </div>
           </div>
+          <div className="categories">
+            <div className="categories-title">
+              <h3>Categories</h3>
+            </div>
+            <div className="categories-content">
+              <ul className="category-lists">
+                <li>
+                  <a href="/our-blog">
+                    <span>Business</span>
+                    <span>05</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/our-blog">
+                    <span>Introductions</span>
+                    <span>15</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/our-blog">
+                    <span>Design Blog</span>
+                    <span>65</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/our-blog">
+                    <span>UI/UX Design</span>
+                    <span>08</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/our-blog">
+                    <span>App Development</span>
+                    <span>16</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="tags">
+            <div className="tag-title">
+              <h3>Tags</h3>
+            </div>
+            <div className="tag-content">
+              <a href="/">Business</a>
+              <a href="/">Graphic Design</a>
+              <a href="/">Technology</a>
+              <a href="/">App Development</a>
+              <a href="/">Website Design</a>
+              <a href="/">Business Idea</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

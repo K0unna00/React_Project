@@ -1,5 +1,4 @@
 import './FirstBlog.scss';
-import Image from './Image.svg';
 import MessageCircle from './message-circle.svg';
 import Person from './person.svg';
 import Timer from './timer.svg';
@@ -10,14 +9,15 @@ interface IBlogProps {
   date: string;
   commentCount: number;
   text: string;
+  image: string;
 }
 export const FirstBlog = (props: IBlogProps) => {
-  const { title, author, date, commentCount, text } = props;
+  const { title, author, date, commentCount, text, image } = props;
   return (
     <section className="first-blog">
       <div className="container">
         <div className="blog-container">
-          <img src={Image} alt="BlogImage" />
+          <img src={image} alt="BlogImage" />
           <div className="blog-data">
             <div className="date">
               <img src={Timer} alt="TimerIcon" /> <span>{date}</span>

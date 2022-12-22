@@ -32,26 +32,107 @@
       }
     }
   }
+  h3 {
+    font-weight: 500;
+    font-size: 25px;
+    color: $font-color;
+    line-height: 30.9px;
+    padding: 20px 0 15px 8px;
+  }
   .posts {
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
-    .posts-title {
-      padding: 20px;
-      margin-top: 40px;
-      h3 {
-        font-weight: 500;
-        font-size: 25px;
-        color: $font-color;
-        line-height: 30.9px;
-      }
-    }
+    margin: 40px 0;
+    padding: 20px;
+
     .post-content {
-      margin-top: 30px;
+      // margin-bottom: 40px;
       .content-box {
-        padding: 15px 18px;
+        padding: 15px 14px 15px 8px;
         display: flex;
-        justify-content: space-between;
         box-sizing: unset;
       }
+      .post-title {
+        padding-left: 17px;
+        span {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24.72px;
+          color: $font-color;
+        }
+      }
     }
+  }
+  .categories {
+    margin: 15px 0;
+    padding: 18px;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 10%);
+    .categories-title {
+      margin-bottom: 15px;
+      margin-left: -9px;
+    }
+    .category-lists {
+      padding: 0;
+      li {
+        list-style: none;
+        margin-bottom: 10px;
+        &:hover {
+          a {
+            color: $accent-color;
+            span:last-child {
+              border-color: $accent-color;
+            }
+          }
+        }
+        a {
+          display: flex;
+          justify-content: space-between;
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 20px;
+          color: $second-font-color;
+          margin-bottom: 20px;
+          line-height: 24.72px;
+          span:last-child {
+            font-weight: 400;
+            font-size: 13.8px;
+            border: 1px solid $second-font-color;
+            line-height: 24px;
+            width: 30px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .tags {
+    margin: 40px 0;
+    padding: 10px;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 10%);
+    .tag-title {
+      margin-top: 10px;
+    }
+    .tag-content {
+      padding: 15px 14px;
+      a {
+        padding: 5px 13px;
+        background: $main-background;
+        color: $second-font-color;
+        margin: 0 18px 21px 0;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24.1px;
+        &:hover{
+         color: $font-color;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width:376px){
+  .container{
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

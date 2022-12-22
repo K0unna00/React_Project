@@ -32,6 +32,7 @@ export const BlogPage = () => {
               date={blog.date}
               commentCount={blog.commentCount}
               text={blog.text}
+              image={blog.image}
             />
           ))}
         </div>
