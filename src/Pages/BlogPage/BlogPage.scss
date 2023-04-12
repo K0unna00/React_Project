@@ -1,0 +1,12 @@
+.blog {
+  .container {
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (max-width:376px){
+  .container{
+    flex-direction: column;
+  }
+}

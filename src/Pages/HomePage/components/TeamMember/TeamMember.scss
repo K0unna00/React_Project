@@ -13,12 +13,19 @@
 
         .title {
             margin-top: 25px;
+            font-weight: 600;
+            font-size: 39.06px;
+            line-height: 123.6%;
+            span{
+                color: $accent-color;
+            }
         }
 
         .members {
             margin-top: 60px;
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             .card {
                 &:hover .media{
                     opacity: 1;
@@ -73,5 +80,18 @@
             }
         }
 
+    }
+}
+@media only screen and (max-width: 376px) {
+    .team-members{
+        .container{
+            .members{
+                width: fit-content;
+                .card{
+                    width: 270px;
+                    margin:15px;
+                }
+            }
+        }
     }
 }

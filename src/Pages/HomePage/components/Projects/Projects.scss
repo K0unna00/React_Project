@@ -1,0 +1,133 @@
+@import "../../../../variables";
+
+.projects {
+  background-color: $main-background;
+  margin-top: 90px;
+
+.container {
+  display: flex;
+}
+
+.experience-about {
+  button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 19px;
+    color: #ffffff;
+    background-color: $accent-color;
+    font-size: 20px;
+    line-height: 24.72px;
+    filter: drop-shadow(4px 5px 15px rgba(255, 83, 0, 0.4));
+    &:hover {
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+  }
+  .experience-title {
+    h6 {
+      margin-top: 83px;
+      margin-bottom: 25px;
+      font-size: 16px;
+      font-weight: 400;
+      color: $second-font-color;
+    }
+    h2 {
+      width: 487px;
+      color: $font-color;
+      margin-bottom: 18px;
+      font-weight: 600;
+      font-size: 39.06px;
+      line-height: 48.28px;
+      span {
+        color: $accent-color;
+      }
+    }
+  }
+  .experience-text {
+    color: $second-font-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24.1px;
+    margin-bottom: 50px;
+    .first-part {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.experience-card {
+  display: flex;
+  margin: auto;
+  .card {
+    text-align: center;
+    margin: 30px;
+    width: 270px;
+    height: 250px;
+    color: $font-color;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    &:hover {
+      filter: drop-shadow(4px 5px 15px rgba(219, 219, 219, 0.351));
+    }
+    p {
+      font-size: 20px;
+      color: $second-font-color;
+      font-weight: 500;
+      line-height: 24.72px;
+    }
+    .number {
+      padding-top: 74px;
+      padding-bottom: 18px;
+      font-weight: 700;
+      font-size: 48px;
+      color: $font-color;
+      line-height: 59.33px;
+    }
+  }
+  .lefts {
+    margin-top: 50px;
+  }
+  .rights {
+    margin-top: 83px;
+  }
+}
+}
+@media only screen and (max-width: 376px) {
+  .projects {
+    .container {
+      width:100%;
+      flex-direction: column;
+      .experience-about {
+        text-align: center;
+        .experience-title {
+          h2 {
+            width: 255px;
+            font-size: 25px;
+            line-height: 30.9px;
+            font-weight: 500;
+            margin: 0 auto;
+          }
+        }
+        .experience-text {
+          line-height: 150.6%;
+          margin:18px 27px;
+          .first-part{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .experience-card {
+      flex-wrap: wrap;
+      justify-content: center;
+      .card {
+         margin: 30px 0;
+      }
+      .rights {
+        margin-top: -30px;
+      }
+    }
+  }
+}

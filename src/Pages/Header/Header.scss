@@ -1,0 +1,65 @@
+@import '../../variables';
+
+.header{
+    background: $header-background;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    height: 100px;
+    
+    .container{
+        display: flex;
+        justify-content: space-between;
+        padding: 37px 0;
+        align-items: center;
+        .logo{
+            cursor: pointer;
+        }
+        .navbar{
+            display: flex;
+            gap: 38px;
+            a{
+                font-weight: 500;
+                color: $font-color;
+                font-family: $main-font;
+                font-size: 20px;
+                text-decoration: none;
+                transition: 0.3s;
+
+                &:hover{
+                    color: $accent-color;
+                }
+            }
+        }
+
+        .dark-mode-btn{
+            margin-top: -10px;
+            cursor: pointer;
+        }
+        .menu-btn{
+            display: none;
+            cursor: pointer;
+        }
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .header{
+        .container{
+            max-width:323px;
+            display: flex;
+            .logo{
+                width: 102px;
+            }
+            .navbar{
+                display: none;
+            }
+            .menu-btn{
+                width: 18px;
+                display: block;
+            }
+            .dark-mode-btn{
+                width: 24px;
+            }
+        }   
+    }
+     
+}
